@@ -1,6 +1,6 @@
 /*
  * Genome Nexus API
- * Genome Nexus Variant Annotation API
+ * This page shows how to use HTTP requests to access the Genome Nexus API. There are more high level clients available in Python, R, JavaScript, TypeScript and various other languages as well as a command line client to annotate MAF and VCF. See https://docs.genomenexus.org/api.  Aside from programmatic clients there are web based tools to annotate variants, see https://docs.genomenexus.org/tools.   We currently only provide long-term support for the '/annotation' endpoint. The other endpoints might change.
  *
  * OpenAPI spec version: 2.0
  * 
@@ -52,7 +52,7 @@ import org.genome_nexus.auth.OAuth;
 
 public class ApiClient {
 
-    private String basePath = "http://genomenexus.org";
+    private String basePath = "http://localhost:38080";
     private boolean debugging = false;
     private Map<String, String> defaultHeaderMap = new HashMap<String, String>();
     private String tempFolderPath = null;
@@ -105,7 +105,7 @@ public class ApiClient {
     /**
      * Set base path
      *
-     * @param basePath Base path of the URL (e.g http://genomenexus.org
+     * @param basePath Base path of the URL (e.g http://localhost:38080
      * @return An instance of OkHttpClient
      */
     public ApiClient setBasePath(String basePath) {

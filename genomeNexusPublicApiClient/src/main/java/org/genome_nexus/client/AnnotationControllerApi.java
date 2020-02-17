@@ -1,6 +1,6 @@
 /*
  * Genome Nexus API
- * Genome Nexus Variant Annotation API
+ * This page shows how to use HTTP requests to access the Genome Nexus API. There are more high level clients available in Python, R, JavaScript, TypeScript and various other languages as well as a command line client to annotate MAF and VCF. See https://docs.genomenexus.org/api.  Aside from programmatic clients there are web based tools to annotate variants, see https://docs.genomenexus.org/tools.   We currently only provide long-term support for the '/annotation' endpoint. The other endpoints might change.
  *
  * OpenAPI spec version: 2.0
  * 
@@ -730,7 +730,7 @@ public class AnnotationControllerApi {
     }
     /**
      * Build call for fetchVariantAnnotationPOST
-     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (required)
+     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (GRCh37) or [\&quot;1:g.182712A&gt;C\&quot;, \&quot;2:g.265023C&gt;T\&quot;, \&quot;3:g.319781del\&quot;, \&quot;19:g.110753dup\&quot;, \&quot;1:g.1385015_1387562del\&quot;] (GRCh38) (required)
      * @param isoformOverrideSource Isoform override source. For example uniprot (optional)
      * @param fields Comma separated list of fields to include (case-sensitive!). For example: hotspots,mutation_assessor (optional, default to hotspots,mutation_assessor)
      * @param progressListener Progress listener
@@ -800,7 +800,7 @@ public class AnnotationControllerApi {
     /**
      * Retrieves VEP annotation for the provided list of variants
      * 
-     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (required)
+     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (GRCh37) or [\&quot;1:g.182712A&gt;C\&quot;, \&quot;2:g.265023C&gt;T\&quot;, \&quot;3:g.319781del\&quot;, \&quot;19:g.110753dup\&quot;, \&quot;1:g.1385015_1387562del\&quot;] (GRCh38) (required)
      * @param isoformOverrideSource Isoform override source. For example uniprot (optional)
      * @param fields Comma separated list of fields to include (case-sensitive!). For example: hotspots,mutation_assessor (optional, default to hotspots,mutation_assessor)
      * @return List&lt;VariantAnnotation&gt;
@@ -814,7 +814,7 @@ public class AnnotationControllerApi {
     /**
      * Retrieves VEP annotation for the provided list of variants
      * 
-     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (required)
+     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (GRCh37) or [\&quot;1:g.182712A&gt;C\&quot;, \&quot;2:g.265023C&gt;T\&quot;, \&quot;3:g.319781del\&quot;, \&quot;19:g.110753dup\&quot;, \&quot;1:g.1385015_1387562del\&quot;] (GRCh38) (required)
      * @param isoformOverrideSource Isoform override source. For example uniprot (optional)
      * @param fields Comma separated list of fields to include (case-sensitive!). For example: hotspots,mutation_assessor (optional, default to hotspots,mutation_assessor)
      * @return ApiResponse&lt;List&lt;VariantAnnotation&gt;&gt;
@@ -829,7 +829,7 @@ public class AnnotationControllerApi {
     /**
      * Retrieves VEP annotation for the provided list of variants (asynchronously)
      * 
-     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (required)
+     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (GRCh37) or [\&quot;1:g.182712A&gt;C\&quot;, \&quot;2:g.265023C&gt;T\&quot;, \&quot;3:g.319781del\&quot;, \&quot;19:g.110753dup\&quot;, \&quot;1:g.1385015_1387562del\&quot;] (GRCh38) (required)
      * @param isoformOverrideSource Isoform override source. For example uniprot (optional)
      * @param fields Comma separated list of fields to include (case-sensitive!). For example: hotspots,mutation_assessor (optional, default to hotspots,mutation_assessor)
      * @param callback The callback to be executed when the API call finishes
