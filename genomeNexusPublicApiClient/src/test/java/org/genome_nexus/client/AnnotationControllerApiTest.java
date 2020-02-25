@@ -45,8 +45,9 @@ public class AnnotationControllerApiTest {
     public void fetchVariantAnnotationByGenomicLocationGETTest() throws ApiException {
         String genomicLocation = null;
         String isoformOverrideSource = null;
+        String token = null;
         List<String> fields = null;
-        VariantAnnotation response = api.fetchVariantAnnotationByGenomicLocationGET(genomicLocation, isoformOverrideSource, fields);
+        VariantAnnotation response = api.fetchVariantAnnotationByGenomicLocationGET(genomicLocation, isoformOverrideSource, token, fields);
 
         // TODO: test validations
     }
@@ -63,8 +64,9 @@ public class AnnotationControllerApiTest {
     public void fetchVariantAnnotationByGenomicLocationPOSTTest() throws ApiException {
         List<GenomicLocation> genomicLocations = null;
         String isoformOverrideSource = null;
+        String token = null;
         List<String> fields = null;
-        List<VariantAnnotation> response = api.fetchVariantAnnotationByGenomicLocationPOST(genomicLocations, isoformOverrideSource, fields);
+        List<VariantAnnotation> response = api.fetchVariantAnnotationByGenomicLocationPOST(genomicLocations, isoformOverrideSource, token, fields);
 
         // TODO: test validations
     }
@@ -81,8 +83,9 @@ public class AnnotationControllerApiTest {
     public void fetchVariantAnnotationByIdGETTest() throws ApiException {
         String variantId = null;
         String isoformOverrideSource = null;
+        String token = null;
         List<String> fields = null;
-        VariantAnnotation response = api.fetchVariantAnnotationByIdGET(variantId, isoformOverrideSource, fields);
+        VariantAnnotation response = api.fetchVariantAnnotationByIdGET(variantId, isoformOverrideSource, token, fields);
 
         // TODO: test validations
     }
@@ -99,8 +102,9 @@ public class AnnotationControllerApiTest {
     public void fetchVariantAnnotationByIdPOSTTest() throws ApiException {
         List<String> variantIds = null;
         String isoformOverrideSource = null;
+        String token = null;
         List<String> fields = null;
-        List<VariantAnnotation> response = api.fetchVariantAnnotationByIdPOST(variantIds, isoformOverrideSource, fields);
+        List<VariantAnnotation> response = api.fetchVariantAnnotationByIdPOST(variantIds, isoformOverrideSource, token, fields);
 
         // TODO: test validations
     }
@@ -117,8 +121,9 @@ public class AnnotationControllerApiTest {
     public void fetchVariantAnnotationGETTest() throws ApiException {
         String variant = null;
         String isoformOverrideSource = null;
+        String token = null;
         List<String> fields = null;
-        VariantAnnotation response = api.fetchVariantAnnotationGET(variant, isoformOverrideSource, fields);
+        VariantAnnotation response = api.fetchVariantAnnotationGET(variant, isoformOverrideSource, token, fields);
 
         // TODO: test validations
     }
@@ -135,8 +140,9 @@ public class AnnotationControllerApiTest {
     public void fetchVariantAnnotationPOSTTest() throws ApiException {
         List<String> variants = null;
         String isoformOverrideSource = null;
+        String token = null;
         List<String> fields = null;
-        List<VariantAnnotation> response = api.fetchVariantAnnotationPOST(variants, isoformOverrideSource, fields);
+        List<VariantAnnotation> response = api.fetchVariantAnnotationPOST(variants, isoformOverrideSource, token, fields);
 
         // TODO: test validations
     }

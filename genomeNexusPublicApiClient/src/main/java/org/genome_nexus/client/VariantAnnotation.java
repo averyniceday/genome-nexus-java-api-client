@@ -29,6 +29,7 @@ import org.genome_nexus.client.HotspotAnnotation;
 import org.genome_nexus.client.IntergenicConsequences;
 import org.genome_nexus.client.MutationAssessorAnnotation;
 import org.genome_nexus.client.MyVariantInfoAnnotation;
+import org.genome_nexus.client.OncokbAnnotation;
 import org.genome_nexus.client.PtmAnnotation;
 import org.genome_nexus.client.TranscriptConsequence;
 import org.genome_nexus.client.VariantAnnotationSummary;
@@ -36,7 +37,7 @@ import org.genome_nexus.client.VariantAnnotationSummary;
 /**
  * VariantAnnotation
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-02-17T14:43:12.113-05:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-02-25T15:10:41.309-05:00")
 public class VariantAnnotation {
   @SerializedName("allele_string")
   private String alleleString = null;
@@ -76,6 +77,9 @@ public class VariantAnnotation {
 
   @SerializedName("my_variant_info")
   private MyVariantInfoAnnotation myVariantInfo = null;
+
+  @SerializedName("oncokb")
+  private OncokbAnnotation oncokb = null;
 
   @SerializedName("ptms")
   private PtmAnnotation ptms = null;
@@ -345,6 +349,24 @@ public class VariantAnnotation {
     this.myVariantInfo = myVariantInfo;
   }
 
+  public VariantAnnotation oncokb(OncokbAnnotation oncokb) {
+    this.oncokb = oncokb;
+    return this;
+  }
+
+   /**
+   * Oncokb
+   * @return oncokb
+  **/
+  @ApiModelProperty(value = "Oncokb")
+  public OncokbAnnotation getOncokb() {
+    return oncokb;
+  }
+
+  public void setOncokb(OncokbAnnotation oncokb) {
+    this.oncokb = oncokb;
+  }
+
   public VariantAnnotation ptms(PtmAnnotation ptms) {
     this.ptms = ptms;
     return this;
@@ -502,6 +524,7 @@ public class VariantAnnotation {
         Objects.equals(this.mostSevereConsequence, variantAnnotation.mostSevereConsequence) &&
         Objects.equals(this.mutationAssessor, variantAnnotation.mutationAssessor) &&
         Objects.equals(this.myVariantInfo, variantAnnotation.myVariantInfo) &&
+        Objects.equals(this.oncokb, variantAnnotation.oncokb) &&
         Objects.equals(this.ptms, variantAnnotation.ptms) &&
         Objects.equals(this.seqRegionName, variantAnnotation.seqRegionName) &&
         Objects.equals(this.start, variantAnnotation.start) &&
@@ -513,7 +536,7 @@ public class VariantAnnotation {
 
   @Override
   public int hashCode() {
-    return Objects.hash(alleleString, annotationJSON, annotationSummary, assemblyName, colocatedVariants, end, hgvsg, hotspots, id, intergenicConsequences, mostSevereConsequence, mutationAssessor, myVariantInfo, ptms, seqRegionName, start, strand, successfullyAnnotated, transcriptConsequences, variant);
+    return Objects.hash(alleleString, annotationJSON, annotationSummary, assemblyName, colocatedVariants, end, hgvsg, hotspots, id, intergenicConsequences, mostSevereConsequence, mutationAssessor, myVariantInfo, oncokb, ptms, seqRegionName, start, strand, successfullyAnnotated, transcriptConsequences, variant);
   }
 
 
@@ -535,6 +558,7 @@ public class VariantAnnotation {
     sb.append("    mostSevereConsequence: ").append(toIndentedString(mostSevereConsequence)).append("\n");
     sb.append("    mutationAssessor: ").append(toIndentedString(mutationAssessor)).append("\n");
     sb.append("    myVariantInfo: ").append(toIndentedString(myVariantInfo)).append("\n");
+    sb.append("    oncokb: ").append(toIndentedString(oncokb)).append("\n");
     sb.append("    ptms: ").append(toIndentedString(ptms)).append("\n");
     sb.append("    seqRegionName: ").append(toIndentedString(seqRegionName)).append("\n");
     sb.append("    start: ").append(toIndentedString(start)).append("\n");

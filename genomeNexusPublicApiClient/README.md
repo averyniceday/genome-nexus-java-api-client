@@ -73,9 +73,10 @@ public class AnnotationControllerApiExample {
         AnnotationControllerApi apiInstance = new AnnotationControllerApi();
         String genomicLocation = "genomicLocation_example"; // String | A genomic location. For example 7,140453136,140453136,A,T
         String isoformOverrideSource = "isoformOverrideSource_example"; // String | Isoform override source. For example uniprot
+        String token = "token_example"; // String | Map of tokens. For example {\"source1\":\"put-your-token1-here\",\"source2\":\"put-your-token2-here\"}
         List<String> fields = Arrays.asList("hotspots,mutation_assessor"); // List<String> | Comma separated list of fields to include (case-sensitive!). For example: hotspots,mutation_assessor
         try {
-            VariantAnnotation result = apiInstance.fetchVariantAnnotationByGenomicLocationGET(genomicLocation, isoformOverrideSource, fields);
+            VariantAnnotation result = apiInstance.fetchVariantAnnotationByGenomicLocationGET(genomicLocation, isoformOverrideSource, token, fields);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling AnnotationControllerApi#fetchVariantAnnotationByGenomicLocationGET");
@@ -123,10 +124,13 @@ Class | Method | HTTP request | Description
  - [AlleleFrequency](docs/AlleleFrequency.md)
  - [AlleleNumber](docs/AlleleNumber.md)
  - [Alleles](docs/Alleles.md)
+ - [ArticleAbstract](docs/ArticleAbstract.md)
+ - [Citations](docs/Citations.md)
  - [ClinVar](docs/ClinVar.md)
  - [ColocatedVariant](docs/ColocatedVariant.md)
  - [Cosmic](docs/Cosmic.md)
  - [Dbsnp](docs/Dbsnp.md)
+ - [Drug](docs/Drug.md)
  - [EnsemblFilter](docs/EnsemblFilter.md)
  - [EnsemblGene](docs/EnsemblGene.md)
  - [EnsemblTranscript](docs/EnsemblTranscript.md)
@@ -141,23 +145,31 @@ Class | Method | HTTP request | Description
  - [Homozygotes](docs/Homozygotes.md)
  - [Hotspot](docs/Hotspot.md)
  - [HotspotAnnotation](docs/HotspotAnnotation.md)
+ - [Implication](docs/Implication.md)
+ - [IndicatorQueryResp](docs/IndicatorQueryResp.md)
+ - [IndicatorQueryTreatment](docs/IndicatorQueryTreatment.md)
  - [IntegerRange](docs/IntegerRange.md)
  - [IntergenicConsequences](docs/IntergenicConsequences.md)
+ - [MainType](docs/MainType.md)
  - [MutationAssessor](docs/MutationAssessor.md)
  - [MutationAssessorAnnotation](docs/MutationAssessorAnnotation.md)
+ - [MutationEffectResp](docs/MutationEffectResp.md)
  - [Mutdb](docs/Mutdb.md)
  - [MyVariantInfo](docs/MyVariantInfo.md)
  - [MyVariantInfoAnnotation](docs/MyVariantInfoAnnotation.md)
+ - [OncokbAnnotation](docs/OncokbAnnotation.md)
  - [PdbHeader](docs/PdbHeader.md)
  - [PfamDomain](docs/PfamDomain.md)
  - [PfamDomainRange](docs/PfamDomainRange.md)
  - [PostTranslationalModification](docs/PostTranslationalModification.md)
  - [PtmAnnotation](docs/PtmAnnotation.md)
  - [PtmFilter](docs/PtmFilter.md)
+ - [Query](docs/Query.md)
  - [Rcv](docs/Rcv.md)
  - [Snpeff](docs/Snpeff.md)
  - [TranscriptConsequence](docs/TranscriptConsequence.md)
  - [TranscriptConsequenceSummary](docs/TranscriptConsequenceSummary.md)
+ - [TumorType](docs/TumorType.md)
  - [UntranslatedRegion](docs/UntranslatedRegion.md)
  - [VariantAnnotation](docs/VariantAnnotation.md)
  - [VariantAnnotationSummary](docs/VariantAnnotationSummary.md)

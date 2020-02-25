@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **mostSevereConsequence** | **String** | Most severe consequence |  [optional]
 **mutationAssessor** | [**MutationAssessorAnnotation**](MutationAssessorAnnotation.md) | Mutation Assessor Annotation |  [optional]
 **myVariantInfo** | [**MyVariantInfoAnnotation**](MyVariantInfoAnnotation.md) | My Variant Info Annotation |  [optional]
+**oncokb** | [**OncokbAnnotation**](OncokbAnnotation.md) | Oncokb |  [optional]
 **ptms** | [**PtmAnnotation**](PtmAnnotation.md) | Post Translational Modifications |  [optional]
 **seqRegionName** | **String** | Chromosome |  [optional]
 **start** | **Integer** | Start position |  [optional]

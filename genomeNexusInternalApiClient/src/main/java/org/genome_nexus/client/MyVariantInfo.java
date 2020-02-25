@@ -33,7 +33,7 @@ import org.genome_nexus.client.Vcf;
 /**
  * MyVariantInfo
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-02-17T14:43:15.123-05:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-02-25T15:10:50.829-05:00")
 public class MyVariantInfo {
   @SerializedName("clinVar")
   private ClinVar clinVar = null;

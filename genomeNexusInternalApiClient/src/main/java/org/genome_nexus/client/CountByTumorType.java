@@ -26,7 +26,7 @@ import java.io.IOException;
 /**
  * CountByTumorType
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-02-17T14:43:15.123-05:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-02-25T15:10:50.829-05:00")
 public class CountByTumorType {
   @SerializedName("tumorType")
   private String tumorType = null;
@@ -43,10 +43,10 @@ public class CountByTumorType {
   }
 
    /**
-   * Get tumorType
+   * Tumor Type
    * @return tumorType
   **/
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tumor Type")
   public String getTumorType() {
     return tumorType;
   }
@@ -61,10 +61,10 @@ public class CountByTumorType {
   }
 
    /**
-   * Get tumorTypeCount
+   * Sample count for Tumor Type
    * @return tumorTypeCount
   **/
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Sample count for Tumor Type")
   public Integer getTumorTypeCount() {
     return tumorTypeCount;
   }
@@ -79,10 +79,10 @@ public class CountByTumorType {
   }
 
    /**
-   * Get variantCount
+   * Variant count for Tumor Type
    * @return variantCount
   **/
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Variant count for Tumor Type")
   public Integer getVariantCount() {
     return variantCount;
   }
